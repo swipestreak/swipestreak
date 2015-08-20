@@ -1,0 +1,55 @@
+.grid-container {
+    clear: left;
+}
+
+
+// swipestreak gallery is floating right at 50% so we float left at 50%.
+.streak-product {
+    float: left;
+    width: 50%;
+    min-height: 400px;
+    overflow: hidden;
+
+    a {
+        display: block;
+        min-height: 400px;
+    }
+
+    .add-to-cart {
+        float: left;
+    }
+    .product-description {
+        clear: both;
+    }
+
+    .streak-product-images {
+        float: right;
+        width: 50%;
+        margin-top: -140px;
+
+        ul {
+            position: relative;
+
+            li {
+                max-width: 300px;
+                list-style-type: none;
+                position: absolute;
+                display: none;
+
+                &.current {
+                    display: block;
+                }
+                img {
+                    max-height: 300px;
+                }
+            }
+        }
+    }
+}
+.StreakProductsPage {
+    // we want streak product article to be 100% on this page as it is in a grid-50 container
+    .streak-product {
+        width: 100%;
+    }
+}
+

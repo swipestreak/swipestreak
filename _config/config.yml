@@ -1,0 +1,32 @@
+---
+Name: swipestreak-config
+---
+Image:
+  extensions:
+    - StreakImageExtension
+Page_Controller:
+  extensions:
+    - StreakControllerExtension
+StreakProductsPage:
+  extensions:
+    - StreakProductsPageExtension
+Product:
+  extensions:
+    - StreakProductExtension
+    - StreakHasImagesExtension
+    - StreakCMSExtension
+Variation:
+  extensions:
+    - StreakHasImagesExtension
+StreakAdmin:
+  managed_models:
+    Product:
+      title: 'All Products'
+      order: 1
+      singleton: false
+    StreakConfig:
+      title: 'Settings'
+      order: -1
+      singleton: true
+
+

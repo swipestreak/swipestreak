@@ -1,0 +1,9 @@
+en:
+  StreakProductsPage:
+    SINGULARNAME: 'Product List Page'
+    PLURALNAME: 'Product List Pages'
+  StreakDiscountType:
+    SINGULARNAME: 'Discount Type'
+    PLURALNAME: 'Discount Types'
+  StreakHasImagesExtension:
+    StreakImages: '{singular} images'

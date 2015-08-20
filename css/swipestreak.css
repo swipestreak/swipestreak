@@ -1,0 +1,55 @@
+/* line 1, ../scss/swipestreak.scss */
+.grid-container {
+  clear: left;
+}
+
+/* line 7, ../scss/swipestreak.scss */
+.streak-product {
+  float: left;
+  width: 50%;
+  min-height: 400px;
+  overflow: hidden;
+}
+/* line 13, ../scss/swipestreak.scss */
+.streak-product a {
+  display: block;
+  min-height: 400px;
+}
+/* line 18, ../scss/swipestreak.scss */
+.streak-product .add-to-cart {
+  float: left;
+}
+/* line 21, ../scss/swipestreak.scss */
+.streak-product .product-description {
+  clear: both;
+}
+/* line 25, ../scss/swipestreak.scss */
+.streak-product .streak-product-images {
+  float: right;
+  width: 50%;
+  margin-top: -140px;
+}
+/* line 30, ../scss/swipestreak.scss */
+.streak-product .streak-product-images ul {
+  position: relative;
+}
+/* line 33, ../scss/swipestreak.scss */
+.streak-product .streak-product-images ul li {
+  max-width: 300px;
+  list-style-type: none;
+  position: absolute;
+  display: none;
+}
+/* line 39, ../scss/swipestreak.scss */
+.streak-product .streak-product-images ul li.current {
+  display: block;
+}
+/* line 42, ../scss/swipestreak.scss */
+.streak-product .streak-product-images ul li img {
+  max-height: 300px;
+}
+
+/* line 51, ../scss/swipestreak.scss */
+.StreakProductsPage .streak-product {
+  width: 100%;
+}
