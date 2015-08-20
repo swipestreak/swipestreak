@@ -1,0 +1,2 @@
+# swipestreak
+Extensions for SwipeStripe
