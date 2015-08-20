@@ -1,7 +1,7 @@
 {
     "name": "swipestreak/swipestreak",
     "type": "silverstripe-module",
-    "description": "SwipeStripe Extensions"
+    "description": "SwipeStripe Extensions",
     "homepage": "http://www.crackerjack.net.nz/",
     "license": "BSD-3-Clause",
     "keywords": ["silverstripe", "swipestripe"],
