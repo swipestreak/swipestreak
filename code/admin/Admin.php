@@ -121,14 +121,8 @@ class StreakAdmin extends GridSheetModelAdmin {
 
         $form = parent::getEditForm($id, $fields);
 
-        $models = $this->getManagedModels();
-        foreach ($models as $class => $options) {
-            if (isset($options['singleton'])) {
-                if ($options['singleton']) {
+        $this->owner->extend('updateStreakAdminForm', $form);
 
-                }
-            }
-        }
         return $form;
 
     }
