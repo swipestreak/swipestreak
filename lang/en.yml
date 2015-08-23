@@ -7,3 +7,5 @@ en:
     PLURALNAME: 'Discount Types'
   StreakHasImagesExtension:
     StreakImages: '{singular} images'
+  Price:
+    TaxNotice: 'RRP'

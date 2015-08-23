@@ -2,6 +2,10 @@
     clear: left;
 }
 
+.tax-notice {
+    color: #838C91;
+    padding-left: 1em;
+}
 
 // swipestreak gallery is floating right at 50% so we float left at 50%.
 .streak-product {
@@ -13,6 +17,9 @@
     a {
         display: block;
         min-height: 400px;
+    }
+    .price {
+        display: inline-block;
     }
 
     .add-to-cart {

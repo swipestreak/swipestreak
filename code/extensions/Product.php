@@ -37,7 +37,7 @@ class StreakProductExtension extends GridSheetModelExtension
                     'field' => 'TextField'
                 ),
                 'Price' => array(
-                    'title' => 'Price',
+                    'title' => 'RRP',
                     'callback' => function ($record, $col) {
                         return new NumericField(
                             $col
