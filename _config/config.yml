@@ -1,6 +1,9 @@
 ---
 Name: swipestreak-config
 ---
+ModelAdmin:
+  extensions:
+    - StreakCMSExtension
 Image:
   extensions:
     - StreakImageExtension

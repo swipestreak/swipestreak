@@ -117,10 +117,6 @@ class StreakAdmin extends GridSheetModelAdmin {
         return new ArrayList($tabs);
     }
 
-    public function FormAction() {
-        xdebug_break();
-    }
-
     public function getEditForm($id = null, $fields = null) {
 
         $form = parent::getEditForm($id, $fields);

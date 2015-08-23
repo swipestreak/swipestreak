@@ -16,6 +16,12 @@ class StreakCMSExtension extends CrackerJackDataExtension {
         ]
     ];
 
+    public function onAfterInit() {
+        // TODO get this javascript working, might need to hook into tabstrip library
+        // sets 'All products' tab to be active on page load.
+        Requirements::javascript('swipestreak/js/cms.js');
+    }
+
     /**
      * Checks through config.field_tabs for the extended class and moves fields from existing
      * tab to designated tab by field name.
