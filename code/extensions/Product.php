@@ -5,6 +5,8 @@ class StreakProductExtension extends GridSheetModelExtension
 
     const RelatedModelClass = 'Product';
 
+    private static $products_reading_mode = 'Stage.Stage';
+
     private static $many_many = array(
         'Accessories' => 'StreakAccessoryPage'
     );
@@ -15,7 +17,14 @@ class StreakProductExtension extends GridSheetModelExtension
 
     public function provideGridSheetData($modelClass) {
         if (self::ModelClass == $modelClass) {
-            return Product::get();
+
+            $mode = static::own_config('products_reading_mode');
+
+            Versioned::set_reading_mode($mode);
+
+            $products = Product::get();
+
+            return $products;
         }
     }
 
@@ -76,7 +85,7 @@ class StreakProductExtension extends GridSheetModelExtension
     }
 
     /**
-     * Called to each existing row in a grid when it is saved.
+     * Called for each existing row in a grid when it is saved.
      *
      * @param $record
      * @return bool
